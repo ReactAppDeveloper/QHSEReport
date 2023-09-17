@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_report"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal">
+
+
+
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Site ID"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:background="@drawable/round_button1"
+                android:id="@+id/id"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:layout_height="50dp"
+                android:gravity="center_vertical|fill_vertical|center_horizontal|fill_horizontal|start" />
+
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:hint="Site ID"-->
+                <!--android:id="@+id/id"-->
+                <!--android:maxLines="1"-->
+                <!--android:background="@drawable/round_button1"-->
+                <!--android:textColorHint="#000000"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="20dp" />-->
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/site_type"
+                android:padding="10dp"
+                android:background="@drawable/round_button1"
+                android:layout_gravity="center_horizontal"
+                android:entries="@array/spinner_item"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Sub Con"
+                android:maxLines="1"
+                android:background="@drawable/round_button1"
+                 android:id="@+id/sub_con"
+                android:padding="10dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical|fill_vertical|center_horizontal|fill_horizontal|start" />
+
+        <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:hint="Sub Con"-->
+                <!--android:textColorHint="#000000"-->
+                <!--android:id="@+id/sub_con"-->
+                <!--android:maxLines="1"-->
+                <!--android:background="@drawable/round_button1"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="20dp" />-->
+
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:hint="Sub Con Team Leader"-->
+                <!--android:id="@+id/team_lead"-->
+                <!--android:background="@drawable/round_button1"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:textColorHint="#000000"-->
+                <!--android:maxLines="1"-->
+                 <!--/>-->
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Sub Con Team Leader"
+                android:maxLines="1"
+                android:id="@+id/team_lead"
+                android:background="@drawable/round_button1"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:textColorHint="#FFFFFF"
+                android:layout_marginTop="20dp"
+                android:layout_height="50dp"
+                android:gravity="center_vertical|fill_vertical|center_horizontal|fill_horizontal|start" />
+
+            <!--<EditText-->
+                <!--android:layout_width="235dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:inputType="date"-->
+                <!--android:ems="10"-->
+                <!--android:hint="Date"-->
+                <!--android:textColorHint="#000000"-->
+                <!--android:id="@+id/edtDate"-->
+                <!--android:background="@drawable/round_button1"-->
+                <!--android:maxLines="1"-->
+                <!--android:focusable="false"-->
+                <!--android:focusableInTouchMode="false"-->
+                <!--android:layout_marginTop="10dp" />-->
+            <EditText
+                android:layout_width="235dp"
+                android:hint="Date"
+                android:maxLines="1"
+                android:ems="10"
+                android:inputType="date"
+                android:id="@+id/edtDate"
+                android:padding="10dp"
+                android:background="@drawable/round_button1"
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginTop="10dp"
+                android:layout_height="40dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_date"
+            android:onClick="onClick"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_date_range"
+            android:layout_marginTop="-44dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:text="Send Email To"/>
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:hint="Enter The Email Address"-->
+            <!--android:id="@+id/email"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:textColorHint="#000000"-->
+            <!--android:maxLines="1"-->
+            <!--android:background="@drawable/round_button1"-->
+            <!--android:inputType="textEmailAddress"-->
+             <!--/>-->
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Enter The Email Address"
+                android:maxLines="1"
+                android:id="@+id/email"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:background="@drawable/round_button1"
+                android:textColorHint="#FFFFFF"
+                android:layout_marginTop="20dp"
+                android:layout_height="50dp"
+                android:gravity="center_vertical|fill_vertical|center_horizontal|fill_horizontal|start" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="@drawable/round_button"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="userReg" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ad_unit_id">
+            </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+
